@@ -284,7 +284,7 @@ const HomePage = ({ setPage, role, onLoginClick }) => {
               Project KPI Dashboard
             </div>
             <div style={{ fontSize:12, color:C.textMid, marginTop:2 }}>
-              8 of 14 milestones complete · M22 of M42 · Fully public
+              8 of 14 milestones complete · Year 2, Month 10 · Fully public
             </div>
           </div>
         </div>
@@ -340,28 +340,28 @@ const ImpactPage = ({ role, onLoginClick }) => {
       intro:"Raw material selection, design principles, manufacturing routes and waste minimisation — covering the full packaging life cycle from production to consumer use.",
       visual:{ label:"Material Readiness Index", bars:[["Bio-based materials",68],["Recycled-content packaging",52],["Mono-material designs",44],["Edible packaging pilots",28]] },
       findings:["PLA, starch and bio-PE account for 53% of global bioplastics.","Mono-materials reduce sorting complexity and contamination risk.","Additive manufacturing emerging as a low-waste processing route."],
-      resources:["Packaging Design Guide (PDF)","WP3 Interim Report","Material Database Access"],
+      resources:["Packaging Design Guide (PDF)","Research Progress Report","Material Database Access"],
     },
     health: {
       title:"Health & Environment", lead:"UOB / INSTM",
       intro:"Identification of hazardous chemicals, microplastic pathways and ecosystem impacts — linking packaging design choices directly to human and environmental health outcomes.",
       visual:{ label:"Health Impact Mapping Progress", bars:[["Chemical classification",80],["Health impact mapping",65],["Ecosystem litter analysis",70],["Migration risk scoring",55]] },
       findings:["BPA and phthalates confirmed endocrine disruptors in food contact materials.","Microplastics detected in 72% of drinking water samples studied.","~2,977 microplastic particles per person per year via takeaway packaging."],
-      resources:["Chemical Safety Report (PDF)","Microplastic Exposure Database","WP4 Review Paper"],
+      resources:["Chemical Safety Report (PDF)","Microplastic Exposure Database","Chemical Safety Review"],
     },
     circular: {
       title:"Circularity Indicators", lead:"HOLOSS",
       intro:"Full LCA, LCC and Social LCA across the packaging value chain — from linear take-make-dispose baselines to optimised circular economy futures.",
       visual:{ label:"Circular vs Linear — Key Metrics", bars:[["GHG reduction potential",28],["LCA baseline complete",75],["Circular BM modelling",55],["S-LCA social indicators",48]] },
       findings:["Circular approaches reduce GHG by 20–30% vs linear baseline.","Enzymatic hydrolysis opens new chemical recycling routes for packaging.","Hyperspectral + NIR spectroscopy significantly improve sorting accuracy."],
-      resources:["LCA Methodology Guide","WP5 Circularity Report","MAGNO Scenario Comparison Tool"],
+      resources:["LCA Methodology Guide","Circularity Report","MAGNO Scenario Comparison Tool"],
     },
     business: {
       title:"Business & Social Acceptance", lead:"EUPC / KVC",
       intro:"Consumer perception surveys, market sizing, and circular business model innovation — understanding what drives or limits adoption across the EU food packaging sector.",
       visual:{ label:"Consumer & Market Insights", bars:[["Survey responses collected",62],["Circular BM validation",50],["Market analysis coverage",78],["Consumer buy-in (target 70%)",38]] },
       findings:["Consumers prioritise recyclability and safety above price.","Agile, data-driven models show >30% performance gain vs conventional.","Deposit-return and refill are highest-acceptance models across EU."],
-      resources:["Consumer Survey Results","Business Model Canvas (MAGNO)","WP6 Market Analysis"],
+      resources:["Consumer Survey Results","Business Model Canvas (MAGNO)","Market Analysis Report"],
     },
     videos: {
       title:"Videos & Workshops", lead:"All Partners",
@@ -486,9 +486,9 @@ const ImpactPage = ({ role, onLoginClick }) => {
           {expanded[section]&&(
             <div style={{ marginTop:12, background:C.light, borderRadius:10, padding:16, fontSize:13,
               color:C.textMid, lineHeight:1.8 }}>
-              This section synthesises results from peer-reviewed deliverables, consortium workshops and
+              This section synthesises results from peer-reviewed publications, consortium workshops and
               multi-actor consultations. Data is updated each semester. Full methodology is available in
-              the project's Description of Action and linked deliverable reports.
+              the project's research findings and published reports.
             </div>
           )}
         </div>
@@ -809,7 +809,7 @@ const CommunityPage = ({ role, onLoginClick }) => {
         {tab==="resources"&&(
           <div>
             <div style={{ display:"grid",gridTemplateColumns:"1fr 1fr",gap:14,marginBottom:16 }}>
-              {[[FileText,"WP Deliverables","Public reports and technical deliverables from all WPs."],[Video,"Workshop Videos","Recordings from 13 MAGNO workshops."],
+              {[[FileText,"Project Reports","Public reports and research findings from all MAGNO teams."],[Video,"Workshop Videos","Recordings from 13 MAGNO workshops."],
                 [Podcast,"Podcasts","3 published episodes exploring MAGNO science and policy."],[Globe,"EU Project Synergies","Links to aligned EU projects."]
               ].map(([I,title,desc])=>(
                 <Card key={title} style={{ display:"flex",gap:14,alignItems:"flex-start" }}>
@@ -1147,19 +1147,19 @@ const KpiPage = ({ role }) => {
 
   const milestones = [
     { id:"MS1",  label:"Project holistic alignment",        date:"M2",  done:true  },
-    { id:"MS2",  label:"Website launch",                    date:"M3",  done:true  },
-    { id:"MS3",  label:"Food multi-actors list confirmed",  date:"M4",  done:true  },
-    { id:"MS4",  label:"EU project synergies established",  date:"M5",  done:true  },
-    { id:"MS5",  label:"Review papers submitted",           date:"M10", done:true  },
-    { id:"MS6",  label:"Digital Twin database ready",       date:"M18", done:true  },
-    { id:"MS7",  label:"Raw materials review accepted",     date:"M18", done:true  },
-    { id:"MS8",  label:"Ecosystem Digital Twin beta",       date:"M20", done:true  },
-    { id:"MS9",  label:"Standards & EU legislation draft",  date:"M25", done:false },
-    { id:"MS10", label:"MAGNO web platform mock-up",        date:"M28", done:false },
-    { id:"MS11", label:"End of Life evaluation complete",   date:"M28", done:false },
-    { id:"MS12", label:"Exploitation plan approved",        date:"M32", done:false },
-    { id:"MS13", label:"Cluster & networking activities",   date:"M32", done:false },
-    { id:"MS14", label:"Final event & replicability cases", date:"M42", done:false },
+    { id:"MS2",  label:"Website launch",                    date:"Month 3",  done:true  },
+    { id:"MS3",  label:"Food multi-actors list confirmed",  date:"Month 4",  done:true  },
+    { id:"MS4",  label:"EU project synergies established",  date:"Month 5",  done:true  },
+    { id:"MS5",  label:"Review papers submitted",           date:"Month 10", done:true  },
+    { id:"MS6",  label:"Digital Twin database ready",       date:"Month 18", done:true  },
+    { id:"MS7",  label:"Raw materials review accepted",     date:"Month 18", done:true  },
+    { id:"MS8",  label:"Ecosystem Digital Twin beta",       date:"Month 20", done:true  },
+    { id:"MS9",  label:"Standards & EU legislation draft",  date:"Month 25", done:false },
+    { id:"MS10", label:"MAGNO web platform mock-up",        date:"Month 28", done:false },
+    { id:"MS11", label:"End of Life evaluation complete",   date:"Month 28", done:false },
+    { id:"MS12", label:"Exploitation plan approved",        date:"Month 32", done:false },
+    { id:"MS13", label:"Cluster & networking activities",   date:"Month 32", done:false },
+    { id:"MS14", label:"Final event & replicability cases", date:"Month 42", done:false },
   ];
 
   const sciOutputs = [
@@ -1175,7 +1175,7 @@ const KpiPage = ({ role }) => {
   const impactKpis = [
     {
       label:"Consumer buy-in (new packaging)", current:38, target:70, color:C.primary,
-      tip:"Measures the share of surveyed consumers willing to switch to MAGNO-proposed sustainable packaging. Target: 70% by M42.",
+      tip:"Measures the share of surveyed consumers willing to switch to MAGNO-proposed sustainable packaging. Target: 70% by end of project.",
     },
     {
       label:"Microplastic reduction potential", current:45, target:81, color:C.orange,
@@ -1187,7 +1187,7 @@ const KpiPage = ({ role }) => {
     },
     {
       label:"Multi-actors engaged", current:32, target:50, color:C.sky,
-      tip:"Number of distinct stakeholders — citizens, industry, researchers, policymakers — actively participating in MAGNO activities. Target: 50 by M42.",
+      tip:"Number of distinct stakeholders — citizens, industry, researchers, policymakers — actively participating in MAGNO activities. Target: 50 by end of project.",
     },
     {
       label:"Recycled plastic rate (>55% target)", current:41, target:55, color:C.purple,
@@ -1234,7 +1234,7 @@ const KpiPage = ({ role }) => {
             KPI Dashboard – MAGNO Project Progress
           </h2>
           <div style={{ fontSize:13, color:C.textMid }}>
-            Fully public · Updated every semester · Current month: <strong>M22</strong> of M42
+            Fully public · Updated every semester · Currently in Year 2, Month 10 of the project
           </div>
         </div>
         <div style={{ display:"flex", gap:8 }}>
@@ -1450,8 +1450,8 @@ const KpiPage = ({ role }) => {
           <Info size={14} color={C.primary}/>
           <div style={{ fontSize:12, color:C.textMid }}>
             Data updated every semester by IRIS Technology Solutions.
-            Last update: <strong>M22 — February 2026</strong>.
-            Full methodology in the MAGNO Description of Action.
+            Last update: <strong>February 2026</strong>.
+            Full methodology available in the project documentation.
           </div>
         </div>
         <Btn label="Download Full Report" color={C.primary} outline small Icon={Download}/>
@@ -1677,7 +1677,7 @@ const AdminPanel = ({ onLogout }) => {
               <Card>
                 <div style={{ fontSize:13,fontWeight:800,color:C.dark,marginBottom:14,fontFamily:"'Jost',sans-serif" }}>Quick Actions</div>
                 <div style={{ display:"flex",flexDirection:"column",gap:10 }}>
-                  {[[Upload,"Upload WP Results",C.primary],[BarChart,"Update KPIs",C.sky],[Shield,"Review Flagged Posts (1)",C.orange],[UserPlus,"Invite Consortium Member",C.lime]].map(([I,l,c])=>(
+                  {[[Upload,"Upload Results",C.primary],[BarChart,"Update KPIs",C.sky],[Shield,"Review Flagged Posts (1)",C.orange],[UserPlus,"Invite Consortium Member",C.lime]].map(([I,l,c])=>(
                     <Btn key={l} label={l} color={c} outline small Icon={I} onClick={()=>setTab(l.includes("KPI")?"kpis":l.includes("Flag")?"moderation":l.includes("WP")?"content":"users")}/>
                   ))}
                 </div>
@@ -1936,7 +1936,7 @@ export default function App() {
           <div style={{ display:"flex",alignItems:"center",gap:12,cursor:"pointer" }} onClick={()=>setPage("home")}>
             <img src={LOGO_B64} alt="MAGNO" style={{ height:42,width:"auto" }}/>
             <div style={{ fontSize:9,color:C.textLight,textTransform:"uppercase",letterSpacing:1.2,fontFamily:"'Encode Sans Condensed',sans-serif" }}>
-              Digital Platform · T6.4
+              Digital Platform
             </div>
           </div>
           <div style={{ display:"flex",gap:2 }}>
