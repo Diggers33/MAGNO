@@ -372,6 +372,7 @@ const ImpactPage = ({ role, onLoginClick }) => {
         { title:"Workshop 1: Project Launch & Alignment", date:"Jun 2025", duration:"38 min", partner:"IDENER" },
         { title:"EU Synergy: PAPERPAC Project Overview", date:"Oct 2025", duration:"22 min", partner:"EU" },
       ],
+      findings:[],
       resources:["All Workshop Recordings","EU Synergy Links","Dissemination Materials"],
     },
   };
@@ -461,6 +462,7 @@ const ImpactPage = ({ role, onLoginClick }) => {
           </div>
         )}
         {/* Key findings */}
+        {c.findings&&c.findings.length>0&&(
         <div style={{ marginBottom:18 }}>
           <div style={{ fontSize:12, fontWeight:800, color:C.textLight, textTransform:"uppercase",
             letterSpacing:1, marginBottom:12, fontFamily:"'Encode Sans Condensed',sans-serif" }}>Key Findings</div>
@@ -471,6 +473,7 @@ const ImpactPage = ({ role, onLoginClick }) => {
             </div>
           ))}
         </div>
+        )}
         {/* Learn more expandable */}
         <div style={{ borderTop:`1px solid ${C.border}`, paddingTop:16 }}>
           <button onClick={()=>setExpanded(e=>({...e,[section]:!e[section]}))}
