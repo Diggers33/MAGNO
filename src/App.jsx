@@ -134,7 +134,7 @@ const LoginModal = ({ onLogin, onClose }) => {
           <h3 style={{ margin:0, fontSize:20, fontWeight:900, color:C.dark, fontFamily:"'Jost',sans-serif" }}>
             {tab==="login"?"Welcome back":"Join MAGNO"}
           </h3>
-          <p style={{ margin:"6px 0 0", fontSize:13, color:C.textMid }}>MAGNO Digital Platform</p>
+          
         </div>
         <div style={{ display:"flex", gap:8, marginBottom:22 }}>
           {[["login","Log In"],["register","Register"]].map(([id,l])=>(
@@ -1936,7 +1936,6 @@ export default function App() {
           <div style={{ display:"flex",alignItems:"center",gap:12,cursor:"pointer" }} onClick={()=>setPage("home")}>
             <img src={LOGO_B64} alt="MAGNO" style={{ height:42,width:"auto" }}/>
             <div style={{ fontSize:9,color:C.textLight,textTransform:"uppercase",letterSpacing:1.2,fontFamily:"'Encode Sans Condensed',sans-serif" }}>
-              Digital Platform
             </div>
           </div>
           <div style={{ display:"flex",gap:2 }}>
@@ -1987,7 +1986,7 @@ export default function App() {
           <div style={{ display:"flex",alignItems:"center",gap:12 }}>
             <img src={LOGO_B64} alt="MAGNO" style={{ height:34,width:"auto",opacity:0.8 }}/>
             <div>
-              <div style={{ fontSize:13,fontWeight:800,fontFamily:"'Jost',sans-serif" }}>MAGNO Digital Platform</div>
+              
               <div style={{ fontSize:11,opacity:0.5,marginTop:2,fontFamily:"'Encode Sans Condensed',sans-serif" }}>T6.4 · Lead: IRIS Technology Solutions · Horizon Europe Grant No. 101135258</div>
             </div>
           </div>
